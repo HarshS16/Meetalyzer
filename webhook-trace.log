@@ -1,0 +1,649 @@
+2026-03-24T18:11:26.442Z - Returning 200 OK.
+2026-03-24T18:11:26.453Z - Returning 200 OK.
+2026-03-24T18:11:29.639Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hii
+2026-03-24T18:11:29.943Z - Returning 200 OK.
+2026-03-24T18:11:31.139Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hii
+2026-03-24T18:11:32.317Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:11:32.318Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:11:32.681Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hii
+2026-03-24T18:11:32.748Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:11:32.749Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:11:33.239Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:11:33.240Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:11:34.198Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hii
+2026-03-24T18:11:34.441Z - Gemini generated response: Hello! How can I help you with
+2026-03-24T18:11:34.756Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:11:34.757Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:11:34.902Z - Gemini generated response: Hello! I have the summary of y
+2026-03-24T18:11:34.975Z - Returning 200 OK.
+2026-03-24T18:11:35.202Z - Successfully called channel.sendMessage.
+2026-03-24T18:11:35.203Z - Returning 200 OK.
+2026-03-24T18:11:35.408Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hello! How can I help you with the Weekly Standup Summary for March 16-22?
+2026-03-24T18:11:35.414Z - Gemini generated response: Hello! How can I help you with
+2026-03-24T18:11:35.459Z - Returning 200 OK.
+2026-03-24T18:11:35.586Z - Returning 200 OK.
+2026-03-24T18:11:35.694Z - Successfully called channel.sendMessage.
+2026-03-24T18:11:35.695Z - Returning 200 OK.
+2026-03-24T18:11:35.843Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hii
+2026-03-24T18:11:36.176Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hello! I have the summary of your team's Weekly Standup from March 16–22. How can I help you with it today?
+2026-03-24T18:11:36.201Z - Returning 200 OK.
+2026-03-24T18:11:36.206Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:11:36.206Z - User IS the agent. Ignoring message.
+2026-03-24T18:11:36.207Z - Returning 200 OK.
+2026-03-24T18:11:36.223Z - Successfully called channel.sendMessage.
+2026-03-24T18:11:36.223Z - Returning 200 OK.
+2026-03-24T18:11:36.352Z - Returning 200 OK.
+2026-03-24T18:11:36.372Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hello! How can I help you with the Weekly Standup Summary for the Product & Engineering team?
+2026-03-24T18:11:36.531Z - Gemini generated response: Hello! How can I help you with
+2026-03-24T18:11:36.754Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:11:36.755Z - User IS the agent. Ignoring message.
+2026-03-24T18:11:36.755Z - Returning 200 OK.
+2026-03-24T18:11:36.801Z - Returning 200 OK.
+2026-03-24T18:11:36.908Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:11:36.909Z - User IS the agent. Ignoring message.
+2026-03-24T18:11:36.909Z - Returning 200 OK.
+2026-03-24T18:11:37.098Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hello! How can I help you with the Weekly Standup Summary for March 16–22?
+2026-03-24T18:11:37.103Z - Successfully called channel.sendMessage.
+2026-03-24T18:11:37.104Z - Returning 200 OK.
+2026-03-24T18:11:37.546Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:11:37.546Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:11:37.636Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:11:37.637Z - User IS the agent. Ignoring message.
+2026-03-24T18:11:37.637Z - Returning 200 OK.
+2026-03-24T18:11:37.654Z - Returning 200 OK.
+2026-03-24T18:11:39.539Z - Gemini generated response: Hello again! I'm here to help 
+2026-03-24T18:11:39.782Z - Returning 200 OK.
+2026-03-24T18:11:40.084Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hello again! I'm here to help you review the Weekly Standup Summary for March 16-22. What would you like to know or discuss about it?
+2026-03-24T18:11:40.087Z - Successfully called channel.sendMessage.
+2026-03-24T18:11:40.087Z - Returning 200 OK.
+2026-03-24T18:11:40.555Z - Returning 200 OK.
+2026-03-24T18:11:40.623Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:11:40.624Z - User IS the agent. Ignoring message.
+2026-03-24T18:11:40.624Z - Returning 200 OK.
+2026-03-24T18:11:56.335Z - Returning 200 OK.
+2026-03-24T18:11:57.219Z - Returning 200 OK.
+2026-03-24T18:12:07.463Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What about on going work
+2026-03-24T18:12:07.706Z - Returning 200 OK.
+2026-03-24T18:12:08.752Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What about on going work
+2026-03-24T18:12:09.603Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:12:09.604Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:12:10.112Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:12:10.113Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:12:10.488Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What about on going work
+2026-03-24T18:12:11.013Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:12:11.013Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:12:11.462Z - Gemini generated response: The ongoing work includes:
+*  
+2026-03-24T18:12:11.960Z - Returning 200 OK.
+2026-03-24T18:12:12.028Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What about on going work
+2026-03-24T18:12:12.031Z - Gemini generated response: The ongoing work includes:
+
+* 
+2026-03-24T18:12:12.086Z - Successfully called channel.sendMessage.
+2026-03-24T18:12:12.086Z - Returning 200 OK.
+2026-03-24T18:12:12.351Z - Returning 200 OK.
+2026-03-24T18:12:12.360Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=The ongoing work includes:
+*   Integration between the recommendation engine and frontend UI.
+*   Mobile responsiveness fixes for the new dashboard.
+*   Data team is cleaning and restructuring legacy datasets for better model performance.
+2026-03-24T18:12:12.524Z - Successfully called channel.sendMessage.
+2026-03-24T18:12:12.524Z - Returning 200 OK.
+2026-03-24T18:12:12.563Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:12:12.564Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:12:12.574Z - Returning 200 OK.
+2026-03-24T18:12:12.798Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=The ongoing work includes:
+
+*   Integration between the recommendation engine and frontend UI.
+*   Mobile responsiveness fixes for the new dashboard.
+*   Data cleaning and restructuring of legacy datasets by the data team for better model performance.
+2026-03-24T18:12:12.885Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:12:12.885Z - User IS the agent. Ignoring message.
+2026-03-24T18:12:12.886Z - Returning 200 OK.
+2026-03-24T18:12:13.321Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:12:13.322Z - User IS the agent. Ignoring message.
+2026-03-24T18:12:13.322Z - Returning 200 OK.
+2026-03-24T18:12:13.536Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What about on going work
+2026-03-24T18:12:14.066Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:12:14.066Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:12:21.651Z - Returning 200 OK.
+2026-03-24T18:13:13.438Z - Returning 200 OK.
+2026-03-24T18:13:13.449Z - Returning 200 OK.
+2026-03-24T18:13:20.959Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What are the blockers and risks
+2026-03-24T18:13:21.213Z - Returning 200 OK.
+2026-03-24T18:13:22.479Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What are the blockers and risks
+2026-03-24T18:13:23.611Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:13:23.612Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:13:24.040Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What are the blockers and risks
+2026-03-24T18:13:24.140Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:13:24.140Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:13:24.590Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:13:24.590Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:13:25.268Z - Gemini generated response: The blockers and risks identif
+2026-03-24T18:13:25.529Z - Returning 200 OK.
+2026-03-24T18:13:25.564Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What are the blockers and risks
+2026-03-24T18:13:25.803Z - Successfully called channel.sendMessage.
+2026-03-24T18:13:25.804Z - Returning 200 OK.
+2026-03-24T18:13:25.807Z - Gemini generated response: The blockers and risks identif
+2026-03-24T18:13:25.998Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=The blockers and risks identified are:
+
+*   Intermittent API failures in the staging environment (root cause still under investigation).
+*   Dependency on a third-party analytics service causing delays in reporting features.
+*   Limited test coverage in some legacy modules increasing the risk of regression.
+2026-03-24T18:13:26.047Z - Returning 200 OK.
+2026-03-24T18:13:26.113Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:13:26.113Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:13:26.303Z - Returning 200 OK.
+2026-03-24T18:13:26.334Z - Successfully called channel.sendMessage.
+2026-03-24T18:13:26.334Z - Returning 200 OK.
+2026-03-24T18:13:26.548Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:13:26.548Z - User IS the agent. Ignoring message.
+2026-03-24T18:13:26.549Z - Returning 200 OK.
+2026-03-24T18:13:26.563Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=The blockers and risks identified are:
+
+*   Intermittent API failures in the staging environment (root cause still under investigation).
+*   Dependency on a third-party analytics service causing delays in reporting features.
+*   Limited test coverage in some legacy modules increasing the risk of regression.
+2026-03-24T18:13:26.796Z - Returning 200 OK.
+2026-03-24T18:13:26.987Z - Gemini generated response: The blockers and risks identif
+2026-03-24T18:13:27.071Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What are the blockers and risks
+2026-03-24T18:13:27.107Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:13:27.108Z - User IS the agent. Ignoring message.
+2026-03-24T18:13:27.108Z - Returning 200 OK.
+2026-03-24T18:13:27.473Z - Returning 200 OK.
+2026-03-24T18:13:27.481Z - Successfully called channel.sendMessage.
+2026-03-24T18:13:27.482Z - Returning 200 OK.
+2026-03-24T18:13:27.499Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=The blockers and risks identified are:
+
+*   Intermittent API failures in the staging environment (root cause still under investigation).
+*   Dependency on a third-party analytics service causing delays in reporting features.
+*   Limited test coverage in some legacy modules increasing the risk of regression.
+2026-03-24T18:13:27.622Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:13:27.623Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:13:27.741Z - Returning 200 OK.
+2026-03-24T18:13:27.977Z - Gemini generated response: The blockers and risks identif
+2026-03-24T18:13:28.044Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:13:28.045Z - User IS the agent. Ignoring message.
+2026-03-24T18:13:28.045Z - Returning 200 OK.
+2026-03-24T18:13:28.222Z - Returning 200 OK.
+2026-03-24T18:13:28.457Z - Successfully called channel.sendMessage.
+2026-03-24T18:13:28.457Z - Returning 200 OK.
+2026-03-24T18:13:28.485Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=The blockers and risks identified are:
+
+*   Intermittent API failures in the staging environment (root cause still under investigation).
+*   Dependency on a third-party analytics service causing delays in reporting features.
+*   Limited test coverage in some legacy modules increasing the risk of regression.
+2026-03-24T18:13:28.694Z - Returning 200 OK.
+2026-03-24T18:13:29.021Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:13:29.022Z - User IS the agent. Ignoring message.
+2026-03-24T18:13:29.022Z - Returning 200 OK.
+2026-03-24T18:13:29.475Z - Gemini generated response: The blockers and risks identif
+2026-03-24T18:13:29.720Z - Returning 200 OK.
+2026-03-24T18:13:29.943Z - Successfully called channel.sendMessage.
+2026-03-24T18:13:29.943Z - Returning 200 OK.
+2026-03-24T18:13:29.960Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=The blockers and risks identified are:
+
+*   Intermittent API failures in the staging environment (root cause still under investigation).
+*   Dependency on a third-party analytics service causing delays in reporting features.
+*   Limited test coverage in some legacy modules increasing the risk of regression.
+2026-03-24T18:13:30.216Z - Returning 200 OK.
+2026-03-24T18:13:30.505Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:13:30.505Z - User IS the agent. Ignoring message.
+2026-03-24T18:13:30.505Z - Returning 200 OK.
+2026-03-24T18:14:02.385Z - Returning 200 OK.
+2026-03-24T18:14:03.400Z - Returning 200 OK.
+2026-03-24T18:14:11.366Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What are the plans for next week ?
+2026-03-24T18:14:11.889Z - Returning 200 OK.
+2026-03-24T18:14:12.696Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What are the plans for next week ?
+2026-03-24T18:14:14.475Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What are the plans for next week ?
+2026-03-24T18:14:14.736Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:14:14.737Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:14:15.076Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:14:15.083Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:14:15.627Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:14:15.627Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:14:15.945Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What are the plans for next week ?
+2026-03-24T18:14:16.504Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:14:16.504Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:14:17.005Z - Gemini generated response: The plans for next week are:
+
+
+2026-03-24T18:14:17.009Z - Gemini generated response: The plans for next week are:
+
+
+2026-03-24T18:14:17.450Z - Returning 200 OK.
+2026-03-24T18:14:17.472Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What are the plans for next week ?
+2026-03-24T18:14:17.499Z - Returning 200 OK.
+2026-03-24T18:14:17.514Z - Successfully called channel.sendMessage.
+2026-03-24T18:14:17.514Z - Returning 200 OK.
+2026-03-24T18:14:17.549Z - Successfully called channel.sendMessage.
+2026-03-24T18:14:17.549Z - Returning 200 OK.
+2026-03-24T18:14:17.709Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=The plans for next week are:
+
+*   Complete end-to-end testing of the new dashboard.
+*   Resolve staging API instability and finalize deployment readiness.
+*   Improve AI model accuracy through additional training data.
+*   Begin rollout of phased production release (if blockers are resolved).
+2026-03-24T18:14:17.745Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=The plans for next week are:
+
+*   Complete end-to-end testing of the new dashboard.
+*   Resolve staging API instability and finalize deployment readiness.
+*   Improve AI model accuracy through additional training data.
+*   Begin rollout of phased production release (if blockers are resolved).
+2026-03-24T18:14:17.970Z - Returning 200 OK.
+2026-03-24T18:14:18.079Z - Gemini generated response: The plans for next week are:
+
+
+2026-03-24T18:14:18.270Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:14:18.270Z - User IS the agent. Ignoring message.
+2026-03-24T18:14:18.271Z - Returning 200 OK.
+2026-03-24T18:14:18.300Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:14:18.301Z - User IS the agent. Ignoring message.
+2026-03-24T18:14:18.301Z - Returning 200 OK.
+2026-03-24T18:14:18.335Z - Returning 200 OK.
+2026-03-24T18:14:18.392Z - Gemini generated response: The plans for next week are:
+
+
+2026-03-24T18:14:18.596Z - Successfully called channel.sendMessage.
+2026-03-24T18:14:18.596Z - Returning 200 OK.
+2026-03-24T18:14:18.632Z - Returning 200 OK.
+2026-03-24T18:14:18.822Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=The plans for next week are:
+
+*   Complete end-to-end testing of the new dashboard.
+*   Resolve staging API instability and finalize deployment readiness.
+*   Improve AI model accuracy through additional training data.
+*   Begin rollout of phased production release (if blockers are resolved).
+2026-03-24T18:14:18.837Z - Returning 200 OK.
+2026-03-24T18:14:18.886Z - Successfully called channel.sendMessage.
+2026-03-24T18:14:18.887Z - Returning 200 OK.
+2026-03-24T18:14:18.894Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=The plans for next week are:
+
+*   Complete end-to-end testing of the new dashboard.
+*   Resolve staging API instability and finalize deployment readiness.
+*   Improve AI model accuracy through additional training data.
+*   Begin rollout of phased production release (if blockers are resolved).
+2026-03-24T18:14:19.081Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:14:19.081Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:14:19.357Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:14:19.357Z - User IS the agent. Ignoring message.
+2026-03-24T18:14:19.358Z - Returning 200 OK.
+2026-03-24T18:14:19.436Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:14:19.437Z - User IS the agent. Ignoring message.
+2026-03-24T18:14:19.437Z - Returning 200 OK.
+2026-03-24T18:14:20.984Z - Gemini generated response: The plans for next week are:
+
+
+2026-03-24T18:14:21.241Z - Returning 200 OK.
+2026-03-24T18:14:21.482Z - Successfully called channel.sendMessage.
+2026-03-24T18:14:21.483Z - Returning 200 OK.
+2026-03-24T18:14:21.527Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=The plans for next week are:
+
+*   Complete end-to-end testing of the new dashboard.
+*   Resolve staging API instability and finalize deployment readiness.
+*   Improve AI model accuracy through additional training data.
+*   Begin rollout of phased production release (if blockers are resolved).
+2026-03-24T18:14:21.743Z - Returning 200 OK.
+2026-03-24T18:14:22.072Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:14:22.072Z - User IS the agent. Ignoring message.
+2026-03-24T18:14:22.073Z - Returning 200 OK.
+2026-03-24T18:17:15.674Z - Returning 200 OK.
+2026-03-24T18:17:15.698Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hii
+2026-03-24T18:17:15.862Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hii
+2026-03-24T18:17:16.195Z - Returning 200 OK.
+2026-03-24T18:17:17.157Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hii
+2026-03-24T18:17:18.721Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:17:18.722Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:17:18.746Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:17:18.747Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:17:18.866Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hii
+2026-03-24T18:17:19.413Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:17:19.414Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:17:19.823Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:17:19.823Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:17:20.460Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hii
+2026-03-24T18:17:20.996Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:17:20.996Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:17:33.291Z - Returning 200 OK.
+2026-03-24T18:17:41.013Z - Returning 200 OK.
+2026-03-24T18:17:55.465Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What's with ongoing work ?
+2026-03-24T18:17:55.748Z - Returning 200 OK.
+2026-03-24T18:17:57.036Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What's with ongoing work ?
+2026-03-24T18:17:58.216Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:17:58.217Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:17:58.554Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What's with ongoing work ?
+2026-03-24T18:17:58.649Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:17:58.649Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:17:59.100Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:17:59.100Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:18:00.066Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What's with ongoing work ?
+2026-03-24T18:18:01.113Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:18:01.114Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:18:01.608Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What's with ongoing work ?
+2026-03-24T18:18:02.157Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:18:02.157Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:19:56.313Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hii
+2026-03-24T18:19:56.521Z - Returning 200 OK.
+2026-03-24T18:19:56.842Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:19:56.842Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:19:56.852Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:19:56.852Z - Returning 200 OK.
+2026-03-24T18:19:59.493Z - Returning 200 OK.
+2026-03-24T18:19:59.871Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hi! The ongoing work for this week includes:
+
+*   Integration between the recommendation engine and frontend UI.
+*   Mobile responsiveness fixes for the new dashboard.
+*   Cleaning and restructuring legacy datasets by the data team.
+2026-03-24T18:20:00.930Z - Returning 200 OK.
+2026-03-24T18:20:02.271Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hi! The ongoing work for this week includes:
+
+*   Integration between the recommendation engine and frontend UI.
+*   Mobile responsiveness fixes for the new dashboard.
+*   Cleaning and restructuring legacy datasets by the data team.
+2026-03-24T18:20:03.044Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hi! The ongoing work for this week includes:
+
+*   Integration between the recommendation engine and frontend UI.
+*   Mobile responsiveness fixes for the new dashboard.
+*   Cleaning and restructuring legacy datasets by the data team.
+2026-03-24T18:20:03.819Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:20:03.820Z - User IS the agent. Ignoring message.
+2026-03-24T18:20:03.820Z - Returning 200 OK.
+2026-03-24T18:20:03.879Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:20:03.880Z - User IS the agent. Ignoring message.
+2026-03-24T18:20:03.880Z - Returning 200 OK.
+2026-03-24T18:20:04.360Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:20:04.361Z - User IS the agent. Ignoring message.
+2026-03-24T18:20:04.361Z - Returning 200 OK.
+2026-03-24T18:20:11.641Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What's with ongoing work ?
+2026-03-24T18:20:11.849Z - Returning 200 OK.
+2026-03-24T18:20:13.132Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What's with ongoing work ?
+2026-03-24T18:20:14.654Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What's with ongoing work ?
+2026-03-24T18:20:14.740Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:20:14.740Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:20:14.750Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:20:14.750Z - Returning 200 OK.
+2026-03-24T18:20:15.203Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:20:15.203Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:20:15.209Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:20:15.209Z - Returning 200 OK.
+2026-03-24T18:20:16.779Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:20:16.779Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:20:16.784Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:20:16.785Z - Returning 200 OK.
+2026-03-24T18:20:17.610Z - Returning 200 OK.
+2026-03-24T18:20:17.642Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=The ongoing work for this week involves:
+
+*   Integrating the recommendation engine with the frontend UI.
+*   Implementing mobile responsiveness fixes for the new dashboard.
+*   The data team cleaning and restructuring legacy datasets.
+2026-03-24T18:20:18.074Z - Returning 200 OK.
+2026-03-24T18:20:18.239Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:20:18.239Z - User IS the agent. Ignoring message.
+2026-03-24T18:20:18.239Z - Returning 200 OK.
+2026-03-24T18:20:19.266Z - Returning 200 OK.
+2026-03-24T18:20:19.760Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=The ongoing work items are:
+
+*   Integrating the recommendation engine with the frontend UI.
+*   Implementing mobile responsiveness fixes for the new dashboard.
+*   The data team is cleaning and restructuring legacy datasets.
+2026-03-24T18:20:19.769Z - Returning 200 OK.
+2026-03-24T18:20:20.985Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:20:20.985Z - User IS the agent. Ignoring message.
+2026-03-24T18:20:20.986Z - Returning 200 OK.
+2026-03-24T18:20:21.262Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=The ongoing work items are:
+
+*   Integrating the recommendation engine with the frontend UI.
+*   Implementing mobile responsiveness fixes for the new dashboard.
+*   The data team is cleaning and restructuring legacy datasets.
+2026-03-24T18:20:22.290Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:20:22.290Z - User IS the agent. Ignoring message.
+2026-03-24T18:20:22.291Z - Returning 200 OK.
+2026-03-24T18:20:26.581Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=cls
+2026-03-24T18:20:26.807Z - Returning 200 OK.
+2026-03-24T18:20:28.104Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=cls
+2026-03-24T18:20:28.958Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:20:28.958Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:20:28.966Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:20:28.966Z - Returning 200 OK.
+2026-03-24T18:20:29.657Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=cls
+2026-03-24T18:20:29.682Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:20:29.682Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:20:29.687Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:20:29.687Z - Returning 200 OK.
+2026-03-24T18:20:30.203Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:20:30.204Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:20:30.209Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:20:30.209Z - Returning 200 OK.
+2026-03-24T18:20:37.077Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hello
+2026-03-24T18:20:37.322Z - Returning 200 OK.
+2026-03-24T18:20:38.618Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hello
+2026-03-24T18:20:39.656Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:20:39.657Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:20:39.664Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:20:39.665Z - Returning 200 OK.
+2026-03-24T18:20:40.025Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:20:40.026Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:20:40.030Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:20:40.030Z - Returning 200 OK.
+2026-03-24T18:20:58.483Z - Returning 200 OK.
+2026-03-24T18:20:58.788Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=The ongoing work for this week involves:
+
+*   Integrating the recommendation engine with the frontend UI.
+*   Implementing mobile responsiveness fixes for the new dashboard.
+*   The data team cleaning and restructuring legacy datasets for better model performance.
+2026-03-24T18:21:00.321Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=The ongoing work for this week involves:
+
+*   Integrating the recommendation engine with the frontend UI.
+*   Implementing mobile responsiveness fixes for the new dashboard.
+*   The data team cleaning and restructuring legacy datasets for better model performance.
+2026-03-24T18:21:00.927Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:21:00.927Z - User IS the agent. Ignoring message.
+2026-03-24T18:21:00.928Z - Returning 200 OK.
+2026-03-24T18:21:01.837Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=mZFhVBqy2eqd1YVGvrHkm, text=The ongoing work for this week involves:
+
+*   Integrating the recommendation engine with the frontend UI.
+*   Implementing mobile responsiveness fixes for the new dashboard.
+*   The data team cleaning and restructuring legacy datasets for better model performance.
+2026-03-24T18:21:01.906Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:21:01.907Z - User IS the agent. Ignoring message.
+2026-03-24T18:21:01.907Z - Returning 200 OK.
+2026-03-24T18:21:02.369Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:21:02.370Z - User IS the agent. Ignoring message.
+2026-03-24T18:21:02.370Z - Returning 200 OK.
+2026-03-24T18:21:42.959Z - Returning 200 OK.
+2026-03-24T18:23:18.152Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hii There
+2026-03-24T18:23:18.325Z - Returning 200 OK.
+2026-03-24T18:23:19.641Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hii There
+2026-03-24T18:23:20.810Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:23:20.811Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:23:20.826Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:23:20.826Z - Returning 200 OK.
+2026-03-24T18:23:21.182Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=Hii There
+2026-03-24T18:23:21.224Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:23:21.224Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:23:21.231Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:23:21.231Z - Returning 200 OK.
+2026-03-24T18:23:21.745Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:23:21.745Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:23:21.750Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:23:21.750Z - Returning 200 OK.
+2026-03-24T18:25:37.827Z - Returning 200 OK.
+2026-03-24T18:25:38.754Z - Returning 200 OK.
+2026-03-24T18:25:57.961Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What's with ongoing work ?
+2026-03-24T18:25:58.285Z - Returning 200 OK.
+2026-03-24T18:25:59.464Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What's with ongoing work ?
+2026-03-24T18:26:00.099Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:26:00.099Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:26:00.110Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:26:00.111Z - Returning 200 OK.
+2026-03-24T18:26:00.767Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:26:00.767Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:26:00.772Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:26:00.772Z - Returning 200 OK.
+2026-03-24T18:26:00.999Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=mZFhVBqy2eqd1YVGvrHkm, text=What's with ongoing work ?
+2026-03-24T18:26:01.530Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:26:01.531Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:26:01.535Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:26:01.536Z - Returning 200 OK.
+2026-03-24T18:26:26.397Z - Returning 200 OK.
+2026-03-24T18:26:26.512Z - Returning 200 OK.
+2026-03-24T18:26:47.773Z - Returning 200 OK.
+2026-03-24T18:26:48.400Z - Returning 200 OK.
+2026-03-24T18:27:13.883Z - Returning 200 OK.
+2026-03-24T18:27:14.898Z - Returning 200 OK.
+2026-03-24T18:27:15.475Z - Returning 200 OK.
+2026-03-24T18:27:21.959Z - Returning 200 OK.
+2026-03-24T18:27:22.268Z - Returning 200 OK.
+2026-03-24T18:27:22.303Z - Returning 200 OK.
+2026-03-24T18:27:22.320Z - Returning 200 OK.
+2026-03-24T18:27:22.458Z - Returning 200 OK.
+2026-03-24T18:27:26.608Z - Returning 200 OK.
+2026-03-24T18:27:27.842Z - Returning 200 OK.
+2026-03-24T18:27:27.858Z - Returning 200 OK.
+2026-03-24T18:27:29.543Z - Returning 200 OK.
+2026-03-24T18:27:30.134Z - Returning 200 OK.
+2026-03-24T18:27:32.659Z - Returning 200 OK.
+2026-03-24T18:27:32.663Z - Returning 200 OK.
+2026-03-24T18:27:32.721Z - Returning 200 OK.
+2026-03-24T18:27:32.840Z - Returning 200 OK.
+2026-03-24T18:27:32.888Z - Returning 200 OK.
+2026-03-24T18:27:32.906Z - Returning 200 OK.
+2026-03-24T18:27:32.922Z - Returning 200 OK.
+2026-03-24T18:27:32.939Z - Returning 200 OK.
+2026-03-24T18:27:33.033Z - Returning 200 OK.
+2026-03-24T18:27:33.270Z - Returning 200 OK.
+2026-03-24T18:27:33.291Z - Returning 200 OK.
+2026-03-24T18:27:33.403Z - Returning 200 OK.
+2026-03-24T18:27:33.607Z - Returning 200 OK.
+2026-03-24T18:27:33.628Z - Returning 200 OK.
+2026-03-24T18:27:33.651Z - Returning 200 OK.
+2026-03-24T18:27:33.694Z - Returning 200 OK.
+2026-03-24T18:27:33.893Z - Returning 200 OK.
+2026-03-24T18:27:39.987Z - Returning 200 OK.
+2026-03-24T18:27:40.625Z - Returning 200 OK.
+2026-03-24T18:27:40.981Z - Returning 200 OK.
+2026-03-24T18:28:52.456Z - Returning 200 OK.
+2026-03-24T18:28:52.945Z - Returning 200 OK.
+2026-03-24T18:28:53.215Z - Returning 200 OK.
+2026-03-24T18:28:53.866Z - Returning 200 OK.
+2026-03-24T18:29:05.918Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=TIinbBF9ZdhDlXKwkaZnQ, text=Hii
+2026-03-24T18:29:06.176Z - Returning 200 OK.
+2026-03-24T18:29:07.422Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=TIinbBF9ZdhDlXKwkaZnQ, text=Hii
+2026-03-24T18:29:08.449Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:29:08.449Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:29:08.461Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:29:08.461Z - Returning 200 OK.
+2026-03-24T18:29:08.551Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:29:08.552Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:29:08.559Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:29:08.559Z - Returning 200 OK.
+2026-03-24T18:29:08.952Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=TIinbBF9ZdhDlXKwkaZnQ, text=Hii
+2026-03-24T18:29:09.492Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:29:09.492Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:29:09.496Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:29:09.497Z - Returning 200 OK.
+2026-03-24T18:34:09.861Z - Inngest ERROR: {"error":{"code":429,"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 50.447001861s.","status":"RESOURCE_EXHAUSTED","details":[{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.5-flash"},"quotaValue":"20"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"50s"}]}}
+2026-03-24T18:34:10.620Z - Inngest ERROR: {"error":{"code":429,"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 49.65777645s.","status":"RESOURCE_EXHAUSTED","details":[{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"model":"gemini-2.5-flash","location":"global"},"quotaValue":"20"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"49s"}]}}
+2026-03-24T18:34:19.763Z - Returning 200 OK.
+2026-03-24T18:34:20.389Z - Returning 200 OK.
+2026-03-24T18:34:22.760Z - Inngest ERROR: {"error":{"code":429,"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 37.578574878s.","status":"RESOURCE_EXHAUSTED","details":[{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.5-flash"},"quotaValue":"20"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"37s"}]}}
+2026-03-24T18:34:36.393Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=TIinbBF9ZdhDlXKwkaZnQ, text=What are the key progress updates ?
+2026-03-24T18:34:36.636Z - Returning 200 OK.
+2026-03-24T18:34:37.854Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=TIinbBF9ZdhDlXKwkaZnQ, text=What are the key progress updates ?
+2026-03-24T18:34:38.533Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:34:38.534Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:34:38.550Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:34:38.551Z - Returning 200 OK.
+2026-03-24T18:34:38.906Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:34:38.907Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:34:38.912Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:34:38.912Z - Returning 200 OK.
+2026-03-24T18:35:08.691Z - Returning 200 OK.
+2026-03-24T18:35:09.761Z - Returning 200 OK.
+2026-03-24T18:35:10.200Z - Returning 200 OK.
+2026-03-24T18:35:10.628Z - Returning 200 OK.
+2026-03-24T18:37:56.458Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=TIinbBF9ZdhDlXKwkaZnQ, text=Hii
+2026-03-24T18:37:56.668Z - Returning 200 OK.
+2026-03-24T18:37:56.996Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:37:56.996Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:37:57.011Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:37:57.011Z - Returning 200 OK.
+2026-03-24T18:39:41.966Z - Inngest ERROR: {"stepId":"generate-gemini-response","name":"Error"}
+2026-03-24T18:39:43.790Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=TIinbBF9ZdhDlXKwkaZnQ, text=Sorry, I encountered an error while processing your request.
+2026-03-24T18:39:44.250Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=TIinbBF9ZdhDlXKwkaZnQ, text=Sorry, I encountered an error while processing your request.
+2026-03-24T18:39:45.730Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=TIinbBF9ZdhDlXKwkaZnQ, text=Sorry, I encountered an error while processing your request.
+2026-03-24T18:39:45.943Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:39:45.944Z - User IS the agent. Ignoring message.
+2026-03-24T18:39:45.944Z - Returning 200 OK.
+2026-03-24T18:39:46.301Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:39:46.301Z - User IS the agent. Ignoring message.
+2026-03-24T18:39:46.301Z - Returning 200 OK.
+2026-03-24T18:39:46.539Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:39:46.540Z - User IS the agent. Ignoring message.
+2026-03-24T18:39:46.540Z - Returning 200 OK.
+2026-03-24T18:40:24.526Z - Returning 200 OK.
+2026-03-24T18:40:24.554Z - Returning 200 OK.
+2026-03-24T18:40:24.601Z - Returning 200 OK.
+2026-03-24T18:40:24.657Z - Returning 200 OK.
+2026-03-24T18:40:24.807Z - Returning 200 OK.
+2026-03-24T18:40:25.389Z - Returning 200 OK.
+2026-03-24T18:40:25.418Z - Returning 200 OK.
+2026-03-24T18:40:25.439Z - Returning 200 OK.
+2026-03-24T18:40:25.455Z - Returning 200 OK.
+2026-03-24T18:40:49.529Z - Returning 200 OK.
+2026-03-24T18:40:50.542Z - Returning 200 OK.
+2026-03-24T18:40:52.224Z - Returning 200 OK.
+2026-03-24T18:40:52.288Z - Returning 200 OK.
+2026-03-24T18:40:54.170Z - Returning 200 OK.
+2026-03-24T18:40:54.270Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=TIinbBF9ZdhDlXKwkaZnQ, text=Hello! I have the summary of your team's Weekly Standup for March 16-22. How can I help you today?
+2026-03-24T18:40:54.807Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:40:54.807Z - User IS the agent. Ignoring message.
+2026-03-24T18:40:54.807Z - Returning 200 OK.
+2026-03-24T18:40:54.876Z - Returning 200 OK.
+2026-03-24T18:41:12.327Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=TIinbBF9ZdhDlXKwkaZnQ, text=What are the key progress updates
+2026-03-24T18:41:12.563Z - Returning 200 OK.
+2026-03-24T18:41:13.884Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=TIinbBF9ZdhDlXKwkaZnQ, text=What are the key progress updates
+2026-03-24T18:41:14.739Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:41:14.740Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:41:14.752Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:41:14.752Z - Returning 200 OK.
+2026-03-24T18:41:15.478Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:41:15.479Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:41:15.484Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:41:15.484Z - Returning 200 OK.
+2026-03-24T18:41:15.717Z - Received message.new! userId=GgqT7LQL0VhTN7M3XvRFaDSkoSwCLmEj, channelId=TIinbBF9ZdhDlXKwkaZnQ, text=What are the key progress updates
+2026-03-24T18:41:16.246Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:41:16.246Z - User is not the agent. Starting Gemini generation...
+2026-03-24T18:41:16.251Z - Successfully dispatched inngest event chat/message.new
+2026-03-24T18:41:16.251Z - Returning 200 OK.
+2026-03-24T18:41:18.199Z - Returning 200 OK.
+2026-03-24T18:41:18.505Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=TIinbBF9ZdhDlXKwkaZnQ, text=Here are the key progress updates from the meeting:
+
+*   Backend team completed API optimization for user authentication, reducing response time by ~28%.
+*   Frontend team finalized the dashboard redesign; it's currently in staging for QA validation.
+*   The AI module for the recommendation engine reached its initial testing phase with promising accuracy (~82% baseline).
+*   DevOps implemented automated deployment pipeline improvements, cutting release time by ~40%.
+2026-03-24T18:41:18.521Z - Returning 200 OK.
+2026-03-24T18:41:18.761Z - Returning 200 OK.
+2026-03-24T18:41:19.022Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=TIinbBF9ZdhDlXKwkaZnQ, text=Here are the key progress updates from the meeting:
+
+*   **Backend team** completed API optimization for user authentication, reducing response time by ~28%.
+*   **Frontend team** finalized the dashboard redesign; it's currently in staging for QA validation.
+*   **AI module** for the recommendation engine reached the initial testing phase with promising accuracy (~82% baseline).
+*   **DevOps** implemented automated deployment pipeline improvements, cutting release time by ~40%.
+2026-03-24T18:41:19.052Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:41:19.053Z - User IS the agent. Ignoring message.
+2026-03-24T18:41:19.053Z - Returning 200 OK.
+2026-03-24T18:41:19.179Z - Returning 200 OK.
+2026-03-24T18:41:19.291Z - Received message.new! userId=maggVTHkLozF5_iRGoagW, channelId=TIinbBF9ZdhDlXKwkaZnQ, text=Here are the key progress updates from the standup:
+
+*   **Backend team** completed API optimization for user authentication, reducing response time by ~28%.
+*   **Frontend team** finalized the dashboard redesign; it's currently in staging for QA validation.
+*   **AI module** for the recommendation engine reached its initial testing phase with promising accuracy (~82% baseline).
+*   **DevOps** implemented automated deployment pipeline improvements, cutting release time by ~40%.
+2026-03-24T18:41:19.305Z - Returning 200 OK.
+2026-03-24T18:41:19.548Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:41:19.548Z - User IS the agent. Ignoring message.
+2026-03-24T18:41:19.548Z - Returning 200 OK.
+2026-03-24T18:41:19.816Z - Found meeting and agent. agentId=maggVTHkLozF5_iRGoagW
+2026-03-24T18:41:19.816Z - User IS the agent. Ignoring message.
+2026-03-24T18:41:19.817Z - Returning 200 OK.
+2026-03-24T18:41:21.693Z - Returning 200 OK.
