@@ -233,7 +233,7 @@ export const SignInView = () => {
             <div className="relative z-10 p-6 rounded-3xl bg-black/30 backdrop-blur-sm border border-emerald-500/20 shadow-2xl shadow-emerald-500/20 hover:shadow-emerald-500/40 transition-all duration-500 hover:scale-105">
               <img
                 src="/logo.svg"
-                alt="VoxTrace Logo"
+                alt="Meetalyzer Logo"
                 className="h-20 w-20 drop-shadow-[0_0_30px_rgba(16,185,129,0.6)]"
               />
             </div>
@@ -243,7 +243,7 @@ export const SignInView = () => {
               className="text-2xl font-bold text-white z-10 tracking-wide"
               style={{ textShadow: "0 0 20px rgba(16,185,129,0.5)" }}
             >
-              VoxTrace.AI
+              Meetalyzer
             </p>
 
             {/* Decorative Particles */}

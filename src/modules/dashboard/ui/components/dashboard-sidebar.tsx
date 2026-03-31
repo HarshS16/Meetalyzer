@@ -47,8 +47,8 @@ export const DashboardSidebar = () => {
       <div className="glass-strong m-2 rounded-2xl h-[calc(100vh-1rem)] flex flex-col border border-primary/15 shadow-lg shadow-primary/5">
         <SidebarHeader className="text-sidebar-foreground">
           <Link href="/dashboard" className="flex items-center gap-2 px-2 pt-4 hover:opacity-80 transition-opacity">
-            <Image src="/logo.svg" height={36} width={36} alt="voxtrace.ai" />
-            <p className="text-2xl font-semibold text-primary">VoxTrace.AI</p>
+            <Image src="/logo.svg" height={36} width={36} alt="meetalyzer" />
+            <p className="text-2xl font-semibold text-primary">Meetalyzer</p>
           </Link>
         </SidebarHeader>
 

@@ -1,6 +1,6 @@
-# VoxTrace.AI
+# Meetalyzer
 
-VoxTrace.AI is a full-stack web app for running AI-assisted video meetings, capturing transcripts and recordings, and generating post-call summaries and follow-up chat. It combines live Stream Video calls with automated agent participation and a dashboard for managing agents and meetings.
+Meetalyzer is a full-stack web app for running AI-assisted video meetings, capturing transcripts and recordings, and generating post-call summaries and follow-up chat. It combines live Stream Video calls with automated agent participation and a dashboard for managing agents and meetings.
 
 ## Tech Stack
 

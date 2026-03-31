@@ -46,7 +46,7 @@
 :root {
   --radius: 0.75rem;
   
-  /* VoxTrace Dark Theme with Teal/Mint Accents */
+  /* Meetalyzer Dark Theme with Teal/Mint Accents */
   --background: oklch(0.08 0.02 180); /* Very dark greenish-black */
   --foreground: oklch(0.98 0 0); /* Almost white */
   

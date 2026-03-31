@@ -262,6 +262,9 @@ export default function HomeView({ session }: { session: Session }) {
           </Badge>
         </div>
 
+        <p className="text-sm tracking-[0.35em] uppercase text-emerald-100/70 mb-3">
+          Meetalyzer
+        </p>
         <h1
           ref={headingRef}
           className="text-5xl md:text-7xl max-w-4xl font-light tracking-tight text-white mb-4"
