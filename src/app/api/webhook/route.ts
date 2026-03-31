@@ -1,5 +1,3 @@
-import OpenAI from "openai";
-import { GoogleGenAI } from "@google/genai";
 import { and, eq, not } from "drizzle-orm";
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
@@ -25,10 +23,6 @@ import { streamVideo } from "@/lib/stream-video";
 import { inngest } from "@/inngest/client";
 import { generateAvatarUri } from "@/lib/avatar";
 import { streamChat } from "@/lib/stream-chat";
-import { } from "openai/resources/index.mjs";
-
-// const openaiClient = new OpenAI({ apiKey: process.env.OPENAI_API_KEY! });
-const geminiClient = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY! });
 
 function verifySignatureWithSDK(body: string, signature: string): boolean {
     return streamVideo.verifyWebhook(body, signature)
@@ -98,17 +92,21 @@ export async function POST(req: NextRequest) {
             try {
                 // console.log(`[Webhook] Connecting AI Agent ${existingAgent.id} to call ${meetingId}...`);
                 const call = streamVideo.video.call("default", meetingId);
-                const realtimeClient = await streamVideo.video.connectOpenAi({
-                    call,
-                    openAiApiKey: process.env.OPENAI_API_KEY!,
-                    agentUserId: existingAgent.id,
-                });
+                if (process.env.OPENAI_API_KEY) {
+                    const realtimeClient = await streamVideo.video.connectOpenAi({
+                        call,
+                        openAiApiKey: process.env.OPENAI_API_KEY,
+                        agentUserId: existingAgent.id,
+                    });
 
-                // console.log(`[Webhook] RealtimeClient connected, updating session instructions...`);
-                realtimeClient.updateSession({
-                    instructions: existingAgent.instructions,
-                });
-                // console.log(`[Webhook] AI Agent connection successful.`);
+                    // console.log(`[Webhook] RealtimeClient connected, updating session instructions...`);
+                    realtimeClient.updateSession({
+                        instructions: existingAgent.instructions,
+                    });
+                    // console.log(`[Webhook] AI Agent connection successful.`);
+                } else {
+                    console.warn("[Webhook] OPENAI_API_KEY not set. Skipping realtime AI agent connection.");
+                }
             } catch (error) {
                 console.error("[Webhook] Error connecting AI Agent:", error);
             }
@@ -214,7 +212,7 @@ export async function POST(req: NextRequest) {
         logTrace("Found meeting and agent. agentId=" + existingAgent.id);
 
         if (userId !== existingAgent.id) {
-            logTrace("User is not the agent. Starting Gemini generation...");
+            logTrace("User is not the agent. Starting OpenRouter generation...");
             await inngest.send({
                 name: "chat/message.new",
                 data: {

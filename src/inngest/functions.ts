@@ -1,36 +1,85 @@
 import JSONL from "jsonl-parse-stringify"
+import OpenAI from "openai";
 import { inngest } from "@/inngest/client";
 import { StreamTranscriptItem } from "@/modules/meetings/types";
 import { db } from "@/db";
 import { agents, meetings, user } from "@/db/schema";
 import { eq, inArray } from "drizzle-orm";
-import { createAgent, openai, TextMessage } from "@inngest/agent-kit";
-import { GoogleGenAI } from "@google/genai";
 import { generateAvatarUri } from "@/lib/avatar";
 import { streamChat } from "@/lib/stream-chat";
-const summarizer = createAgent({
-  name: "summarizer",
-  system: `You are an expert summarizer. 
-           You write readable, concise, simple content. You are given a transcript of a meeting and you need to summarize it.
-           Use the following markdown structure for every output:
+const openRouterBaseUrl = "https://openrouter.ai/api/v1/";
+const openRouterModels = (process.env.OPENROUTER_MODELS || process.env.OPENROUTER_MODEL || "openai/gpt-4o-mini")
+  .split(",")
+  .map((model) => model.trim())
+  .filter(Boolean);
 
-          ### Overview
-          Provide a detailed, engaging summary of the session's content. Focus on major features, user workflows, and any key takeaways. Write in a narrative style, using full sentences. Highlight unique or powerful aspects of the product, platform, or discussion.
+const summarySystemPrompt = `You are an expert summarizer.
+You write readable, concise, simple content. You are given a transcript of a meeting and you need to summarize it.
+Use the following markdown structure for every output:
 
-          ### Notes
-          Break down key content into thematic sections with timestamp ranges. Each section should summarize key points, actions, or demos in bullet format.
+### Overview
+Provide a detailed, engaging summary of the session's content. Focus on major features, user workflows, and any key takeaways. Write in a narrative style, using full sentences. Highlight unique or powerful aspects of the product, platform, or discussion.
 
-          Example:
-          #### Section Name
-          - Main point or demo shown here
-          - Another key insight or interaction
-          - Follow-up tool or explanation provided
+### Notes
+Break down key content into thematic sections with timestamp ranges. Each section should summarize key points, actions, or demos in bullet format.
 
-          #### Next Section
-          - Feature X automatically does Y
-          - Mention of integration with Z`.trim(),
-  model: openai({ model: "gpt-4o", apiKey: process.env.OPENAI_API_KEY })
-})
+Example:
+#### Section Name
+- Main point or demo shown here
+- Another key insight or interaction
+- Follow-up tool or explanation provided
+
+#### Next Section
+- Feature X automatically does Y
+- Mention of integration with Z`.trim();
+
+const openRouterClient = new OpenAI({
+  apiKey: process.env.OPENROUTER_API_KEY,
+  baseURL: openRouterBaseUrl,
+});
+
+async function raceOpenRouterCompletion(
+  messages: Array<{ role: "system" | "user" | "assistant"; content: string }>
+): Promise<{ model: string; text: string }> {
+  const controllers = openRouterModels.map(() => new AbortController());
+
+  const requests = openRouterModels.map((model, index) =>
+    openRouterClient.chat.completions
+      .create(
+        {
+          model,
+          messages,
+        },
+        {
+          signal: controllers[index].signal,
+        }
+      )
+      .then((response) => {
+        const text = response.choices?.[0]?.message?.content?.trim();
+        if (!text) {
+          throw new Error(`Empty response from ${model}`);
+        }
+        return { model, text };
+      })
+  );
+
+  try {
+    const winner = await Promise.any(requests);
+    controllers.forEach((controller) => controller.abort());
+    return winner;
+  } catch (error) {
+    const results = await Promise.allSettled(requests);
+    const messages = results
+      .map((result, index) => {
+        if (result.status === "fulfilled") return null;
+        return `${openRouterModels[index]}: ${String(result.reason)}`;
+      })
+      .filter(Boolean)
+      .join(" | ");
+
+    throw new Error(`All OpenRouter models failed. ${messages}`);
+  }
+}
 
 export const meetingsProcessing = inngest.createFunction(
   { id: "meetings-processing" },
@@ -95,19 +144,22 @@ export const meetingsProcessing = inngest.createFunction(
       })
     });
 
-    const output = await summarizer.run(
-      `Summarize the following transcript:\n\n${JSON.stringify(
-        transcriptWithSpeakers,
-        null,
-        2
-      )}`
-    );
+    const summaryPrompt = `Summarize the following transcript:\n\n${JSON.stringify(
+      transcriptWithSpeakers,
+      null,
+      2
+    )}`;
+
+    const summaryResponse = await raceOpenRouterCompletion([
+      { role: "system", content: summarySystemPrompt },
+      { role: "user", content: summaryPrompt },
+    ]);
 
     await step.run("save-summary", async () => {
       await db
         .update(meetings)
         .set({
-          summary: (output.output[0] as TextMessage).content as string,
+          summary: summaryResponse.text,
           status: "completed",
         })
         .where(eq(meetings.id, event.data.meetingId))
@@ -122,9 +174,7 @@ export const chatMessageProcessing = inngest.createFunction(
     const { channelId, text, agentId, agentName, instructions, summary } = event.data;
 
     try {
-        const geminiClient = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY! });
-        
-        await step.run("generate-gemini-response", async () => {
+      await step.run("generate-openrouter-response", async () => {
             const fullInstructions = `
                 You are an AI assistant helping the user revisit a recently completed meeting.
                 Below is a summary of the meeting, generated from the transcript:
@@ -148,49 +198,46 @@ export const chatMessageProcessing = inngest.createFunction(
             const channel = streamChat.channel("messaging", channelId);
             await channel.watch();
 
-        // Send a typing indicator from the AI Agent
-        await channel.sendEvent({
-            type: "typing.start",
-            user: { id: agentId }
-        });
+            // Send a typing indicator from the AI Agent
+            await channel.sendEvent({
+              type: "typing.start",
+              user: { id: agentId }
+            });
 
-        let previousMessage = channel.state.messages
-            .filter((msg) => msg.text && msg.text.trim() !== "")
-            .map((message) => ({
-                role: message.user?.id === agentId ? "model" : "user",
-                parts: [{ text: message.text || "" }],
-            }));
+            let previousMessage = channel.state.messages
+              .filter((msg) => msg.text && msg.text.trim() !== "")
+              .map((message) => ({
+                role: message.user?.id === agentId ? "assistant" : "user",
+                content: message.text || "",
+              }));
 
-        // Filter for strictly alternating roles starting with "user"
-        const filteredMessages: any[] = [];
-        for (const msg of previousMessage) {
-            if (filteredMessages.length === 0 && msg.role === "model") continue;
-            if (filteredMessages.length > 0 && filteredMessages[filteredMessages.length - 1].role === msg.role) continue;
-            filteredMessages.push(msg);
-        }
-
-        previousMessage = filteredMessages.slice(-5);
-        
-        if (previousMessage.length > 0 && previousMessage[previousMessage.length - 1].role === "user") {
-             previousMessage[previousMessage.length - 1].parts[0].text += "\n" + text;
-        } else {
-             previousMessage.push({
-                 role: "user",
-                 parts: [{ text: text }]
-             });
-        }
-
-        const response = await geminiClient.models.generateContent({
-            model: 'gemini-2.5-flash',
-            contents: previousMessage.length > 0 ? previousMessage : [{ role: "user", parts: [{ text: text }] }],
-            config: {
-                systemInstruction: fullInstructions,
+            // Filter for strictly alternating roles starting with "user"
+            const filteredMessages: Array<{ role: "user" | "assistant"; content: string }> = [];
+            for (const msg of previousMessage) {
+              if (filteredMessages.length === 0 && msg.role === "assistant") continue;
+              if (filteredMessages.length > 0 && filteredMessages[filteredMessages.length - 1].role === msg.role) continue;
+              filteredMessages.push(msg);
             }
-        });
 
-        const geminiResponseText = response.text;
+            previousMessage = filteredMessages.slice(-5);
 
-        if (geminiResponseText) {
+            if (previousMessage.length > 0 && previousMessage[previousMessage.length - 1].role === "user") {
+              previousMessage[previousMessage.length - 1].content += "\n" + text;
+            } else {
+              previousMessage.push({
+                role: "user",
+                content: text,
+              });
+            }
+
+            const openRouterResponse = await raceOpenRouterCompletion([
+              { role: "system", content: fullInstructions },
+              ...previousMessage,
+            ]);
+
+            const openRouterResponseText = openRouterResponse.text;
+
+            if (openRouterResponseText) {
             const avatarUri = generateAvatarUri({
                 seed: agentName,
                 variant: "botttsNeutral"
@@ -203,22 +250,22 @@ export const chatMessageProcessing = inngest.createFunction(
             });
 
             await channel.sendMessage({
-                text: geminiResponseText,
-                user: {
-                    id: agentId,
-                    name: agentName,
-                    image: avatarUri,
-                }
+              text: openRouterResponseText,
+              user: {
+                id: agentId,
+                name: agentName,
+                image: avatarUri,
+              }
             });
 
             // Stop the typing indicator
-            await channel.sendEvent({
+              await channel.sendEvent({
                 type: "typing.stop",
                 user: { id: agentId }
-            });
-        }
-    }); // end step.run
-  } catch (error: any) {
+              });
+              }
+            }); // end step.run
+          } catch (error: any) {
       console.error("Error in chatMessageProcessing Inngest function:", error);
       import("fs").then(fs => {
           try { fs.appendFileSync(process.cwd() + "/webhook-trace.log", new Date().toISOString() + " - Inngest ERROR: " + JSON.stringify(error) + "\n"); } catch(e){}
@@ -233,9 +280,9 @@ export const chatMessageProcessing = inngest.createFunction(
           });
           
           let errorMessage = "Sorry, I encountered an error while processing your request.";
-          if (JSON.stringify(error).includes("429") || JSON.stringify(error).includes("quota")) {
-              errorMessage = "Sorry, I have currently exceeded the free-tier rate limit for the Gemini API. Please wait a minute and try again!";
-          }
+            if (JSON.stringify(error).includes("429") || JSON.stringify(error).includes("quota")) {
+              errorMessage = "Sorry, I have currently exceeded the rate limit for OpenRouter. Please wait a minute and try again!";
+            }
 
           const avatarUri = generateAvatarUri({
               seed: agentName,

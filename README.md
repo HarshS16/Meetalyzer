@@ -12,7 +12,7 @@ Meetalyzer is a full-stack web app for running AI-assisted video meetings, captu
 - tRPC + TanStack Query
 - Stream Video + Stream Chat
 - Inngest background jobs
-- OpenAI + Google Gemini (summaries and chat follow-ups)
+- OpenRouter (summaries and chat follow-ups)
 - GSAP + Three.js (hero animation)
 
 ## Core Functionality
@@ -46,8 +46,11 @@ STREAM_SECRET_KEY="..."
 NEXT_PUBLIC_STREAM_VIDEO_API_KEY="..."
 STREAM_VIDEO_SECRET_KEY="..."
 
+OPENROUTER_API_KEY="..."
+OPENROUTER_MODEL="openai/gpt-4o-mini"
+
+# Optional: only needed for Stream's realtime meeting agent
 OPENAI_API_KEY="..."
-GEMINI_API_KEY="..."
 
 GITHUB_CLIENT_ID="..."
 GITHUB_CLIENT_SECRET="..."

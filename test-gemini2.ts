@@ -1,22 +1,24 @@
-import { GoogleGenAI } from "@google/genai";
+import OpenAI from "openai";
 import * as dotenv from "dotenv";
 dotenv.config();
 
-const geminiClient = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY! });
+const openRouterModel = process.env.OPENROUTER_MODEL || "openai/gpt-4o-mini";
+const openRouterClient = new OpenAI({
+    apiKey: process.env.OPENROUTER_API_KEY!,
+    baseURL: "https://openrouter.ai/api/v1",
+});
 
 async function test() {
     try {
-        const previousMessage = [
-            { role: "user", parts: [{ text: "Hello!" }] },
-            { role: "user", parts: [{ text: "How are you?" }] }
-        ];
-
-        const response = await geminiClient.models.generateContent({
-            model: 'gemini-2.5-flash',
-            contents: previousMessage,
-            config: { systemInstruction: "You are a helpful assistant." }
+        const response = await openRouterClient.chat.completions.create({
+            model: openRouterModel,
+            messages: [
+                { role: "system", content: "You are a helpful assistant." },
+                { role: "user", content: "Hello!" },
+                { role: "user", content: "How are you?" },
+            ],
         });
-        console.log("Response:", response.text);
+        console.log("Response:", response.choices?.[0]?.message?.content);
     } catch (e) {
         console.error("Error:", (e as Error).message || e);
     }
